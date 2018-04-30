@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zh-Hant-TW">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="peter studio" content="studio" />
+<meta http-equiv="content-language" content="zh-TW" />
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+
+<!-- Stylesheets
+	============================================= -->
+<link href="http://fonts.googleapis.com/css?family=Mukta+Vaani:300,400,500,600,700|Open+Sans:300,400,600,700,800,900" rel="stylesheet" type="text/css" />
+<link rel="icon" href="favicon.ico" >
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="css/dark.css" type="text/css" />
+<!--<link rel="stylesheet" href="css/swiper.css" type="text/css" />-->
+
+<!-- Bootstrap Select CSS -->
+<link rel="stylesheet" href="css/components/bs-select.css" type="text/css" />
+
+<!-- car Specific Stylesheet -->
+<link rel="stylesheet" href="demos/car/car-1.css" type="text/css" />
+<link rel="stylesheet" href="demos/car/css/car-icons/style.css" type="text/css" />
+
+<!-- / -->
+
+<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+<link rel="stylesheet" href="css/animate.css" type="text/css" />
+<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+<link rel="stylesheet" href="demos/car/css/fonts.css" type="text/css" />
+<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+
+
+
+
+<!-- Document Title
+	============================================= -->
+<title>Certified Pre-Owned Cars</title>
+
+</head>
+
+<body class="stretched side-push-panel" data-loader-html="<div><img src='demos/car/images/page-loader.gif' alt='Loader'></div>"
+
+<!-- Side Panel Overlay -->
+<div class="body-overlay"></div>
+
+<!-- 側邊會員註冊和會員登入Side Panel -->
+<div id="side-panel">
+  <div id="side-panel-trigger-close" class="side-panel-trigger"><a href="#"><i class="icon-line-cross"></i></a></div>
+  <div class="side-panel-wrap">
+    <div class="widget clearfix"> <a href="index.html"><img src="demos/car/images/logo@2x.png" alt="CPO Logo" height="50" ></a>
+      <p>歡迎成為CPO-CARMARK網會員，「一站刊登，多站曝光」新功能熱映中～除了免費刊登外，您的愛車還會同步曝光在Yahoo、PChome，加快成交速度！<br>
+        在這裡可以快速找到理想的車款，快速為愛車找到新車主，還有公開透明的買賣中古車資訊，快來享受專業的服務吧!</p>
+      <div class="widget quick-contact-widget noborder notoppadding clearfix">
+        <div class="tabs clearfix" id="tab-3">
+          <ul class="tab-nav tab-nav2 clearfix">
+            <li><a href="#tabs-1">快速註冊</a></li>
+            <li><a href="#tabs-2">登入會員</a></li>
+          </ul>
+          <div class="tab-container">
+            <div class="tab-content clearfix" id="tabs-1">
+              <form id="quick-contact-form" name="quick-contact-form" action="" method="post" class="quick-contact-form nobottommargin">
+                <div class="form-process"></div>
+                <input type="text" class="required sm-form-control input-block-level" id="quick-contact-form-name" name="quick-contact-form-name" value="" placeholder="請輸入註冊帳號" />
+                <input type="text" class="required sm-form-control email input-block-level" id="quick-contact-form-email" name="quick-contact-form-email" value="" placeholder="請輸入電子信箱" />
+                <input type="pass" class="required sm-form-control pass input-block-level" id="quick-contact-form-pass" name="quick-contact-form-pass" value="" placeholder="請輸入密碼" />
+                <button type="submit" id="quick-contact-form-submit" name="quick-contact-form-submit" class="button button-border button-rounded button-red" value="submit"><i class="icon-key"></i>註冊送出</button>
+              </form>
+            </div>
+            <div class="tab-content clearfix" id="tabs-2">
+              <form id="quick-contact-form2" name="quick-contact-form2" action="" method="post" class="quick-contact-form nobottommargin">
+                <div class="form-process"></div>
+                <input type="text" class="required sm-form-control input-block-level" id="member-form-name" name="member-form-name" value="" placeholder="請輸入會員帳號" />
+                <input type="pass" class="required sm-form-control pass input-block-level" id="member-form-pass" name="member-form-pass" value="" placeholder="請輸入密碼" />
+                <div>
+                  <button type="submit" id="login-form-submit" name="login-form-submit" class="button button-border button-rounded button-blue fleft" value="submit"><i class="icon-user"></i>登入會員</button>
+                  <span class="fright pt-2"><a href="#">忘記密碼?</a></span> </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Document Wrapper
+	============================================= -->
+<div id="wrapper" class="clearfix">
+
+<!-- Header 選單
+		============================================= -->
+<header id="header" class="static-sticky full-header clearfix">
+  <div id="header-wrap">
+    <div class="container-fluid clearfix">
+      <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+      
+      <!-- Logo
+						============================================= -->
+      <div id="logo"> <a href="index.html" class="standard-logo"><img src="demos/car/images/logo.png" alt="CPO Logo"></a> 
+		  <a href="index.html" class="retina-logo pt-4"><img src="demos/car/images/logo@2x.png" alt="CPO Logo" style="height:60px"></a> </div>
+      <!-- #logo end --> 
+      
+      <!-- Primary Navigation
+					============================================= -->
+      <nav id="primary-menu" class="with-arrows clearfix">
+        <ul>
+          <li class="current"><a href="#">
+            <div>首頁</div>
+            </a></li>         
+          <li><a href="#" class="side-panel-trigger">
+            <div>登入/註冊</div>
+            </a></li>
+          <li><a href="#">
+            <div>關於CPO</div>
+            </a></li>
+          <li><a href="#">
+            <div>幫助中心</div>
+            </a></li>          
+          <li><a href="#">
+            <div>問與答</div>
+            </a></li>
+          <li><a href="#">
+			  <div>目前註冊人數為<p class="main-color">403,808</p></div></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- #primary-menu end --> 
+    </div>
+  </div>
+  <div id="header-trigger"><i class="icon-line-menu"></i><i class="icon-line-cross"></i></div>
+</header>
+<!-- #header end --> 
+
+<!-- Slider
+		============================================= -->
+<section id="slider" class="slider-element slider-parallax swiper_wrapper full-screen clearfix">
+
+			<div class="slider-parallax-inner">
+
+				<div class="fslider" data-speed="3000" data-pause="45000" data-animation="fade" data-arrows="false" data-pagi="false" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: #333;">
+					<div class="flexslider" style="height: 100% !important;">
+						<div class="slider-wrap" style="height: inherit;">
+							<div class="slide">
+							   <video class="index_hero_movie" autoplay="" loop="">
+                                  <source src="demos/car/images/videos/video1_spring.mp4" type="video/mp4">
+                               </video>	
+							</div>	
+							<div class="slide" style="background: url('demos/car/images/hero-slider/4.jpg') center center; background-size: cover; height: 100% !important;"></div>							
+							<div class="slide" style="background: url('demos/car/images/hero-slider/3.jpg') center center; background-size: cover; height: 100% !important;"></div>
+							<div class="slide">
+							   <video class="index_hero_movie" autoplay="" loop="">
+                                  <source src="demos/car/images/videos/video2_spring.mp4" type="video/mp4">
+                               </video>	
+							</div>
+							<div class="slide" style="background: url('demos/car/images/hero-slider/2.jpg') center center; background-size: cover; height: 100% !important;"></div>
+							<div class="slide" style="background: url('demos/car/images/hero-slider/1.jpg') center center; background-size: cover; height: 100% !important;"></div>
+						</div>
+					</div>
+					<div class="video-overlay-car"></div>
+				</div>
+
+				<div id="travel-slider-overlay">
+
+					<div class="vertical-middle">
+
+						<div class="container clearfix">
+
+							<div class="tabs travel-organiser-tabs clearfix">
+
+								<ul class="tab-nav clearfix">
+									<li><a href="#tab-flights"><i class="icon-star"></i>
+										<span class="d-none d-md-inline-block">找好車</span></a></li>
+									<li><a href="#tab-hotels"><i class="icon-line-heart"></i>
+										<span class="d-none d-md-inline-block">找品牌</span></a></li>
+									<li><a href="#tab-flights-hotels"><i class="icon-shop"></i>
+										<span class="d-none d-md-inline-block">找車商 </span></a></li>					
+								</ul>
+
+								<div class="tab-container">
+
+									<div class="tab-content clearfix" id="tab-flights">
+              <div class="heading-block nobottomborder bottommargin-sm clearfix">                 
+                <div class="row">
+                  <div class="col-md-10 col-12 bottommargin-sm-15">
+                    <input type="text" value="" class="sm-form-control" placeholder="請輸入關鍵字，廠商，車型，車款...">
+                  </div>
+                  <div class="col-md-2 col-2"> <a href="#" class="button button-small button-3d button-rounded button-red"><i class="icon-search2"></i>搜尋</a> </div>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <form action="#" method="post" class="nobottommargin">
+                <div class="row">
+                  <div class="col-md-6 col-12 bottommargin-sm ten-thousand">
+                    <label for="">價格搜尋</label>
+                    <input type="text" value="" class="sm-form-control" placeholder="0">
+                  </div>
+                  <div class="col-md-6 col-12 bottommargin-sm ten-thousand">
+                    <label for="">到</label>
+                    <input type="text" value="" class="sm-form-control" placeholder="1000">
+                  </div>
+                  <div class="clear"></div>
+                  <div class="input-daterange car-date-group col-md-8 bottommargin-sm-15">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <label for="">選擇廠商</label>
+                        <select name="month" class="sm-form-control">
+                          <option value="">廠牌不限</option>
+                          <option value="MITSUBISHI">MITSUBISHI (三菱)</option>
+                          <option value="NISSAN">NISSAN (日產)</option>
+                          <option value="TOYOTA">TOYOTA (豐田)</option>
+                          <option value="HONDA">HONDA (本田)</option>
+                          <option value="SUZUKI">SUZUKI (鈴木)</option>
+                          <option value="MAZDA">MAZDA (馬自達)</option>
+                          <option value="FORD">FORD (福特)</option>
+                          <option value="HYUNDAI">HYUNDAI (現代)</option>
+                          <option value="ALFA ROMEO">ALFA ROMEO (愛發)</option>
+                          <option value="ASTON MARTIN">ASTON MARTIN (奧斯頓•馬丁)</option>
+                          <option value="AUDI">AUDI (奧迪)</option>
+                          <option value="BENZ">BENZ (賓士)</option>
+                          <option value="BENTLEY">BENTLEY (賓利)</option>
+                          <option value="BMW">BMW (寶馬)</option>
+                          <option value="BUICK">BUICK (別克)</option>
+                          <option value="CADILLAC">CADILLAC (凱迪拉克)</option>
+                          <option value="CHEVROLET">CHEVROLET (雪佛蘭)</option>
+                          <option value="CHRYSLER">CHRYSLER (克萊思勒)</option>
+                          <option value="CITROEN">CITROEN (雪鐵龍)</option>
+                          <option value="CHERY">CHERY (奇瑞)</option>
+                          <option value="DODGE">DODGE (道奇)</option>
+                          <option value="DAEWOO">DAEWOO (大宇)</option>
+                          <option value="DAIHATSU">DAIHATSU (大發)</option>
+                          <option value="FERRARI">FERRARI (法拉利)</option>
+                          <option value="FIAT">FIAT (飛雅特)</option>
+                          <option value="FORMOSA">FORMOSA (台朔)</option>
+                          <option value="FOTON">FOTON (福田)</option>
+                          <option value="GM">GM (通用)</option>
+                          <option value="HUMMER">HUMMER (悍馬)</option>
+                          <option value="HINO">HINO (日野)</option>
+                          <option value="INFINITI">INFINITI (極致)</option>
+                          <option value="ISUZU">ISUZU (五十鈴)</option>
+                          <option value="JAGUAR">JAGUAR (積架)</option>
+                          <option value="JEEP">JEEP (吉普)</option>
+                          <option value="KIA">KIA (起亞)</option>
+                          <option value="LAMBORGHINI">LAMBORGHINI (林寶堅尼)</option>
+                          <option value="LAND ROVER">LAND ROVER (路華)</option>
+                          <option value="LEXUS">LEXUS (凌志)</option>
+                          <option value="LOTUS">LOTUS (蓮花)</option>
+                          <option value="LUXGEN">LUXGEN (納智捷)</option>
+                          <option value="MASERATI">MASERATI (瑪莎拉蒂)</option>
+                          <option value="MINI">MINI (迷你)</option>
+                          <option value="OPEL">OPEL (歐寶)</option>
+                          <option value="PEUGEOT">PEUGEOT (寶獅)</option>
+                          <option value="PORSCHE">PORSCHE (保時捷)</option>
+                          <option value="PROTON">PROTON (普而騰)</option>
+                          <option value="RENAULT">RENAULT (雷諾)</option>
+                          <option value="ROVER">ROVER(路華)</option>
+                          <option value="SAAB">SAAB (紳寶)</option>
+                          <option value="SSANGYONG">SSANGYONG (雙龍)</option>
+                          <option value="SUBARU">SUBARU (速霸陸)</option>
+                          <option value="SMART">SMART (司麥特)</option>
+                          <option value="SKODA">SKODA (斯科達)</option>
+                          <option value="TOBE">TOBE (裕隆酷比)</option>
+                          <option value="VOLVO">VOLVO (富豪)</option>
+                          <option value="VW">VW (福斯)</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6 col-12">
+                        <label for="">選擇車型</label>
+                        <select name="month" class="sm-form-control">
+                          <option value="">車型不限</option>
+                          <option value="ASX">ASX</option>
+                          <option value="CANTER">CANTER</option>
+                          <option value="CHALLENGER">CHALLENGER</option>
+                          <option value="COLT PLUS">COLT PLUS</option>
+                          <option value="DELICA">DELICA</option>
+                          <option value="DIAMANTE">DIAMANTE</option>
+                          <option value="ECLIPSE">ECLIPSE</option>
+                          <option value="EVO">EVO</option>
+                          <option value="FORTIS">FORTIS</option>
+                          <option value="FREECA">FREECA</option>
+                          <option value="FUSO">FUSO</option>
+                          <option value="GALANT">GALANT</option>
+                          <option value="GRAND LANCER">GRAND LANCER</option>
+                          <option value="GREEN WAGON">GREEN WAGON</option>
+                          <option value="GRUNDER">GRUNDER</option>
+                          <option value="LANCER">LANCER</option>
+                          <option value="LANCER IO">LANCER IO</option>
+                          <option value="LANCER SPORTBACK">LANCER SPORTBACK</option>
+                          <option value="LEADCA">LEADCA</option>
+                          <option value="LIBERO">LIBERO</option>
+                          <option value="MAGIC">MAGIC</option>
+                          <option value="MINICAB">MINICAB</option>
+                          <option value="MIRAGE">MIRAGE</option>
+                          <option value="NEW VERYCA">NEW VERYCA</option>
+                          <option value="OUTLANDER">OUTLANDER</option>
+                          <option value="PAJERO">PAJERO</option>
+                          <option value="RVR">RVR</option>
+                          <option value="SAVRIN">SAVRIN</option>
+                          <option value="SPACE GEAR">SPACE GEAR</option>
+                          <option value="TOWNY">TOWNY</option>
+                          <option value="VARICA">VARICA</option>
+                          <option value="VERYCA">VERYCA</option>
+                          <option value="VIRAGE">VIRAGE</option>
+                          <option value="ZINGER">ZINGER</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 bottommargin-sm">
+                    <label for="">選擇所在地</label>
+                    <select name="month" class="sm-form-control">
+                      <option value="">請選擇縣市</option>
+                      <option value="臺北市">臺北市</option>
+                      <option value="基隆市">基隆市</option>
+                      <option value="新北市">新北市</option>
+                      <option value="宜蘭縣">宜蘭縣</option>
+                      <option value="桃園市">桃園市</option>
+                      <option value="新竹市">新竹市</option>
+                      <option value="新竹縣">新竹縣</option>
+                      <option value="苗栗縣">苗栗縣</option>
+                      <option value="臺中市">臺中市</option>
+                      <option value="彰化縣">彰化縣</option>
+                      <option value="南投縣">南投縣</option>
+                      <option value="雲林縣">雲林縣</option>
+                      <option value="嘉義市">嘉義市</option>
+                      <option value="嘉義縣">嘉義縣</option>
+                      <option value="臺南市">臺南市</option>
+                      <option value="高雄市">高雄市</option>
+                      <option value="屏東縣">屏東縣</option>
+                      <option value="臺東縣">臺東縣</option>
+                      <option value="花蓮縣">花蓮縣</option>
+                      <option value="澎湖縣">澎湖縣</option>
+                      <option value="金門縣">金門縣</option>
+                      <option value="連江縣">連江縣</option>
+                    </select>
+                  </div>
+                  <div class="col-md-12">
+                    <button class="button button-border button-rounded button-red"><i class="icon-line-search"></i>搜尋</button>
+                    <a href="#" class="more-link fright" style="margin-top: 9px;">進階搜尋</a> </div>
+                </div>
+              </form>
+            </div>
+									
+								<div class="tab-content clearfix" id="tab-hotels">
+             <div class="heading-block nobottomborder bottommargin-sm clearfix">
+               <div class="tabs clearfix">
+  <ul class="tab-nav tab-nav3 clearfix">
+    <li><a href="#tabs-car-A">A</a></li>
+    <li><a href="#tabs-car-B">B</a></li>
+    <li><a href="#tabs-car-C">C</a></li>
+	<li><a href="#tabs-car-D">D</a></li>
+    <li><a href="#tabs-car-F">F</a></li>
+    <li><a href="#tabs-car-G">G</a></li>
+	<li><a href="#tabs-car-H">H</a></li>
+    <li><a href="#tabs-car-I">I</a></li>
+    <li><a href="#tabs-car-J">J</a></li>
+	<li><a href="#tabs-car-K">K</a></li>
+    <li><a href="#tabs-car-L">L</a></li>
+    <li><a href="#tabs-car-M">M</a></li>
+	<li><a href="#tabs-car-N">N</a></li>
+    <li><a href="#tabs-car-O">O</a></li>
+    <li><a href="#tabs-car-P">P</a></li>
+	<li><a href="#tabs-car-R">R</a></li>
+    <li><a href="#tabs-car-S">S</a></li>
+    <li><a href="#tabs-car-T">T</a></li>
+	<li><a href="#tabs-car-V">V</a></li>
+  </ul>
+  <div class="tab-container bg-t-color">
+    <div class="tab-content clearfix" id="tabs-car-A"> 
+	  <div class="row">                  
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Alfa Romeo</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Aston Martin</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Audi</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Acura</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Asia</a>
+		</div>  
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Austin</a>
+		</div>
+		 
+	  </div>	
+	</div>
+    <div class="tab-content clearfix" id="tabs-car-B">
+		<div class="row">
+	  <div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Bentley</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">BMW</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Buick</a>
+		</div>
+	  </div>    
+		</div>
+	<div class="tab-content clearfix" id="tabs-car-C">
+		<div class="row">
+	  <div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Cadillac</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Citroen</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Chery</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Chrysler</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">CMC</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Chevrolet</a>
+		</div>
+	  </div>
+		</div>
+    <div class="tab-content clearfix" id="tabs-car-D">
+		<div class="row">
+	  <div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Daihatsu</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">DS</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Dodge</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">DFSK</a>
+		</div>
+	  </div>
+		</div>
+	<div class="tab-content clearfix" id="tabs-car-F">
+		<div class="row">
+	  <div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Ferrari</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Fiat</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Ford</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Formosa</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Foton</a>
+		</div>
+	  </div>  
+		</div>
+	<div class="tab-content clearfix" id="tabs-car-G">
+		<div class="row">
+	  <div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Geo</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">GMC</a>
+		</div>
+	  </div>
+		</div>
+    <div class="tab-content clearfix" id="tabs-car-H">
+		<div class="row">
+	  <div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Honda</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Hyundai</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Hummer</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Hino</a>
+		</div>
+	  </div>
+		</div>
+	<div class="tab-content clearfix" id="tabs-car-I">
+		<div class="row">
+	  <div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Infiniti</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Isuzu</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">IVECO</a>
+		</div>
+	  </div>  
+		</div>
+	<div class="tab-content clearfix" id="tabs-car-J">
+		<div class="row">
+	  <div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Jaguar</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Jeep</a>
+		</div>
+	  </div>
+		</div>
+    <div class="tab-content clearfix" id="tabs-car-K">
+		<div class="row">
+	  <div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Kia</a>
+		</div>
+	  </div>
+		</div>
+	<div class="tab-content clearfix" id="tabs-car-L">
+		<div class="row">
+	  <div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Lamborghini</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Land Rover</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Lexus</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Lotus</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Luxgen</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Lincoln</a>
+		</div>
+		
+	  </div> 
+		</div>
+	<div class="tab-content clearfix" id="tabs-car-M">
+		<div class="row">
+	  <div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Mercedes-Benz</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Maserati</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Mazda</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Mini</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Mitsubishi</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">McLaren</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Morgan</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Mahindra</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">MCC Smart</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">MG</a>
+		</div>
+	  </div>
+		</div>
+    <div class="tab-content clearfix" id="tabs-car-N">
+		<div class="row">
+	  <div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Nissan</a>
+		</div>
+	  </div>
+	  </div>	
+	<div class="tab-content clearfix" id="tabs-car-O">
+		<div class="row">
+	  <div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Opel</a>
+		</div>
+	  </div> 
+		</div>
+	<div class="tab-content clearfix" id="tabs-car-P">
+		<div class="row">
+	  <div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Peugeot</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Porsche</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Proton</a>
+		</div>
+	  </div>
+		</div>
+    <div class="tab-content clearfix" id="tabs-car-R">
+		<div class="row">
+	  <div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Rolls-Royce</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Renault</a>
+		</div>
+	  </div>
+		</div>
+	<div class="tab-content clearfix" id="tabs-car-S">
+		<div class="row">
+	  <div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Saab</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Skoda</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Smart</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Sangyong</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Subaru</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Suzuki</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Saturn</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Scion</a>
+		</div>
+	  </div> 
+		</div>
+	<div class="tab-content clearfix" id="tabs-car-T">
+		<div class="row">
+	  <div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Tobe</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Toyota</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Tesla</a>
+		</div>
+	  </div>
+		</div>
+    <div class="tab-content clearfix" id="tabs-car-V">
+		<div class="row">
+	  <div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Volkswagen</a>
+		</div>
+		<div class="col-md-4 col-12 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">Volvo</a>
+		</div>
+	  </div>
+		</div>
+  </div>
+</div>
+			 </div>                  
+            </div>	
+									
+									<div class="tab-content clearfix" id="tab-flights-hotels">
+										<div class="heading-block nobottomborder bottommargin-sm clearfix">
+<div class="row">                  
+		<div class="col-md-4 col-6 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">基隆市</a>
+		</div>
+		<div class="col-md-4 col-6 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">臺北市</a>
+		</div>
+		<div class="col-md-4 col-6 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">新北市</a>
+		</div>
+		<div class="col-md-4 col-6 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">桃園市</a>
+		</div>
+		<div class="col-md-4 col-6 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">新竹市</a>
+		</div>  
+		<div class="col-md-4 col-6 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">新竹縣</a>
+		</div>
+		 <div class="col-md-4 col-6 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">苗栗縣</a>
+		</div>
+	 <div class="col-md-4 col-6 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">臺中市</a>
+		</div>
+	 <div class="col-md-4 col-6 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">彰化縣</a>
+		</div>
+	 <div class="col-md-4 col-6 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">南投縣</a>
+		</div>
+	 <div class="col-md-4 col-6 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">雲林縣</a>
+		</div>
+	 <div class="col-md-4 col-6 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">嘉義市</a>
+		</div>
+	 <div class="col-md-4 col-6 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">嘉義縣</a>
+		</div>
+	 <div class="col-md-4 col-6 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">臺南市</a>
+		</div>
+	 <div class="col-md-4 col-6 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">高雄市</a>
+		</div>
+	 <div class="col-md-4 col-6 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">屏東縣</a>
+		</div>
+	 <div class="col-md-4 col-6 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">宜蘭縣</a>
+		</div>
+	<div class="col-md-4 col-6 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">花蓮縣</a>
+		</div>	  
+		<div class="col-md-4 col-6 px-2">  
+           <a href="#" class="button button-border button-border-thin w-100 text-center ">臺東縣</a>
+		</div>
+	  </div>
+</div>
+										
+									</div>
+									
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+<!-- #Slider End --> 
+<section class="clearfix">
+  <div class="container-fluid clearfix">	
+	<div class="row">	
+	   <div class="col-md-4 col-12 bd-rl-1 bd-tl-1 px-0">
+		   <div class="life-content">
+		    <a href="#">
+			 <img class="w100-img" src="demos/car/images/categories/life-1.jpg" alt="青年首購">
+		     <div class="overlay over-hidden shadow-inset">
+               <div class="text-overlay">
+                <div class="text-overlay-title"><h3>青年首購</h3></div>
+                <div class="text-overlay-meta"><span>人生第一台車的你</span></div>				
+		        <div class="life-description"><span>建議選擇國產、低油耗、排氣量小、好開好上手的入門車款。</span></div>  
+               </div>
+             </div>
+		    </a>
+		   </div>									 
+	   </div>
+	   <div class="col-md-4 col-12 bd-rl-1 bd-tl-1 px-0">
+		   <div class="life-content">
+		    <a href="#">
+			 <img class="w100-img" src="demos/car/images/categories/life-2.jpg" alt="享樂人生">
+		     <div class="overlay over-hidden shadow-inset">
+               <div class="text-overlay">
+                <div class="text-overlay-title"><h3>享樂人生</h3></div>
+                <div class="text-overlay-meta"><span>優雅時髦的你</span></div>				
+		        <div class="life-description"><span>建議進口車、雙門轎跑車款，經典外型、辨識度高時尚又優雅。</span></div>  
+               </div>
+             </div>
+		    </a>
+		   </div>		   
+	   </div>
+	   <div class="col-md-4 col-12 bd-tl-1 px-0">
+		 <div class="life-content">
+		    <a href="#">
+			 <img class="w100-img" src="demos/car/images/categories/life-3.jpg" alt="家庭實用">
+		     <div class="overlay over-hidden shadow-inset">
+               <div class="text-overlay">
+                <div class="text-overlay-title"><h3>家庭實用</h3></div>
+                <div class="text-overlay-meta"><span>家庭為重的你</span></div>				
+		        <div class="life-description"><span>建議中大型轎車、休旅、RV車。滿足乘載空間與儲物空間需求。</span></div>  
+               </div>
+             </div>
+		    </a>
+		   </div>     
+	   </div>
+    </div>	
+  </div>	
+</section>	
+
+	
+<!-- Content
+		============================================= -->
+<section id="content" class="clearfix">
+  <div class="content-wrap nobottompadding" style="padding-top: 1px">
+  
+  <!-- Moving car on scroll
+				============================================= -->
+				<div class="section notopmargin clearfix" style="padding: 100px 0">
+					<div class="running-car topmargin-sm">
+						<img class="car" src="demos/car/images/moving-car/car.png" alt="">
+						
+					</div>
+					<div class="container clearfix">
+						<div class="row clearfix" style="position: relative;">
+							<div class="col-lg-6 offset-lg-6">
+								<div class="heading-block hlarge">
+									<h3 class="pb-3" style="color: #FF6010;">白日夢?<br></h3><h3>不如開車追夢!</h3>
+								</div>
+								<p>CR-V不僅是新款上市受到歡迎，歷代產品在二手車市場上亦是炙手可熱的產品，更讓其在良好的產品力之外，擁有絕佳的保值性，能大幅減低車主持有成本，是在尋找SUV產品的買家不容錯過的選擇。CPO-CARMARK二手車頻道特別精選品相良好的歷代CR-V產品，供消費者參考。</p>
+							</div>
+						</div>
+					</div>
+				</div> <!-- Moving car on scroll End -->
+  
+  <!-- Features Section
+				============================================= -->
+  <div class="container clearfix">
+    
+	  <div class="row clearfix topmargin bottommargin">
+      <div class="col-lg-6 col-md-6 topmargin bottommargin-sm">
+        <div class="heading-block hlarge">
+		  <h3 class="pb-3" style="color: #FF6010;">買二手車風險多 <br></h3><h3>重大事故車必閃</h3>	          
+        </div>
+        <p>車輛行駛於路上，難免會遇到意外事故，如果只是小擦撞，不傷及車體結構，只有外表蒙皮鈑金受損的話，維修難度相對會比較簡單，且維修後也不會影響行車安全，但如果運氣不好，遇到重大撞擊時，車體潰縮與毀損的情況，往往很嚴重，有些甚至已傷及車體大樑等安全性的結構。<br>
+        </p>
+        <div class="clear"></div>
+        <a href="#" class="button button-border button-rounded button-blue noleftmargin topmargin-sm clearfix">二手車專欄報導</a> </div>
+      <div class="col-lg-6 d-lg-block center"> 
+		  <img src="demos/car/images/features/bg1.jpg" alt="Car"> 
+	  </div>
+      
+      </div>
+  </div>
+  <!-- Features Area End --> 
+  
+
+  
+  <!--  搜尋不同車種-->
+  <div class="section nomargin nobg clearfix" style="padding: 100px 0;">
+    <div class="container clearfix">
+      <div class="heading-block center">
+        <div class="before-heading uppercase ls1" style="font-size: 13px; font-style: normal;">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+        <h3 class="t700">Featured Vehicles</h3>
+      </div>
+      
+      <!-- Portfolio Filter
+						============================================= -->
+      <ul class="portfolio-filter style-2 clearfix" data-container="#portfolio">
+        <li><a href="#" data-filter=".cf-cuv"><i class="icon-car-cuv"></i><span>Cuv</span></a></li>
+        <li><a href="#" data-filter=".cf-sedan"><i class="icon-car-sedan"></i><span>Sedan</span></a></li>
+        <li><a href="#" data-filter=".cf-supercar"><i class="icon-car-supercar"></i><span>Supercar</span></a></li>
+        <li><a href="#" data-filter=".cf-hatchback"><i class="icon-car-hatchback"></i><span>Hatchback</span></a></li>
+        <li><a href="#" data-filter=".cf-cabriolet"><i class="icon-car-cabriolet"></i><span>Cabriolet</span></a></li>
+        <!-- Show All Button -->
+        <li class="fright activeFilter"><a class="button button-small button-rounded button-reset" href="#" data-filter="*">Show All</a></li>
+      </ul>
+      <!-- #portfolio-filter end -->
+      
+      <div class="clear"></div>
+      
+      <!-- Portfolio Items
+						============================================= -->
+      <div id="portfolio" class="portfolio portfolio-3 grid-container clearfix" data-layout="fitRows"> 
+        
+        <!-- Car 1 -->
+        <article class="portfolio-item cf-sedan" style="padding-bottom: 40px">
+          <div class="portfolio-image"> <a href="#"> <img src="demos/car/images/filter-cars/1.jpg" alt="Open Imagination">
+            <div class="filter-p-pricing"> <span class="p-price t700 ls1">$32,568</span> <span class="p-price-msrp">MSRP : <strong>$35,698</strong></span> </div>
+            </a> </div>
+          <div class="portfolio-desc">
+            <h3><a href="#">Ford Mustang - White</a></h3>
+            <span>Dramatically synthesize parallel applications vis-a-vis revolutionary e-tailers. Monotonectally incubate cooperative partnerships.</span> </div>
+          <div class="row no-gutters car-p-features font-primary clearfix">
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-meter"></i><span> 20000</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-door"></i><span> 5 Seater</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-fuel2"></i><span> 20kmpl</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-signal"></i><span> Automatic</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-wheel"></i><span> 15 Inch</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-care"></i><span> 2015</span></div>
+          </div>
+        </article>
+        
+        <!-- Car 2 -->
+        <article class="portfolio-item cf-suv" style="padding-bottom: 40px">
+          <div class="portfolio-image"> <a href="#"> <img src="demos/car/images/filter-cars/2.jpg" alt="Open Imagination">
+            <div class="filter-p-pricing"> <span class="p-price t700 ls1">$32,568</span> <span class="p-price-msrp">MSRP : <strong>$35,698</strong></span> </div>
+            </a> </div>
+          <div class="portfolio-desc">
+            <h3><a href="#">Chevrolet Brown Traverse</a></h3>
+            <span>Enthusiastically incubate turnkey technologies for exceptional materials. Seamlessly implement emerging scenarios.</span> </div>
+          <div class="row no-gutters car-p-features font-primary clearfix">
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-meter"></i><span> 0-50 mph</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-door"></i><span> 7 Seater</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-paint"></i><span> Brown</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-signal"></i><span> Manual</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-wheel"></i><span> 20-Inch</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-care"></i><span> 2018</span></div>
+          </div>
+        </article>
+        
+        <!-- Car 3 -->
+        <article class="portfolio-item cf-cabriolet" style="padding-bottom: 40px">
+          <div class="portfolio-image"> <a href="#"> <img src="demos/car/images/filter-cars/3.jpg" alt="Open Imagination">
+            <div class="filter-p-pricing"> <span class="p-price t700 ls1">$62,300</span> <span class="p-price-msrp">MSRP : <strong>$62,700</strong></span> </div>
+            </a> </div>
+          <div class="portfolio-desc">
+            <h3><a href="#">Audi 2018 S5 Cabriolet</a></h3>
+            <span>Competently evolve intuitive synergy without corporate human capital. Monotonectally.</span> </div>
+          <div class="row no-gutters car-p-features font-primary clearfix">
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-meter"></i><span> 0-60 mph</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-bearing"></i><span> Six-cylinder</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-fuel2"></i><span> 23 mpg8</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-signal"></i><span> Automatic</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-care"></i><span> 2018</span></div>
+          </div>
+        </article>
+        
+        <!-- Car 4 -->
+        <article class="portfolio-item cf-cuv">
+          <div class="portfolio-image"> <a href="#"> <img src="demos/car/images/filter-cars/4.jpg" alt="Open Imagination">
+            <div class="filter-p-pricing"> <span class="p-price t700 ls1">$32,568</span> <span class="p-price-msrp">MSRP : <strong>$35,698</strong></span> </div>
+            </a> </div>
+          <div class="portfolio-desc">
+            <h3><a href="#">BMW 3 Series, ABS</a></h3>
+            <span>Energistically engineer user friendly synergy vis-a-vis enabled channels. Rapidiously utilize value-added. Laudantium debitis perferendis obcaecati.</span> </div>
+          <div class="row no-gutters car-p-features font-primary clearfix">
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-meter"></i><span> 0-80 mph</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-fuel2"></i><span> Hybrid</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-signal"></i><span> Automatic</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-stearing"></i><span> 3000</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-care"></i><span> 2017</span></div>
+          </div>
+        </article>
+        
+        <!-- Car 5 -->
+        <article class="portfolio-item cf-supercar">
+          <div class="portfolio-image"> <a href="#"> <img src="demos/car/images/filter-cars/5.jpg" alt="Open Imagination">
+            <div class="filter-p-pricing"> <span class="p-price t700 ls1">$32,568</span> <span class="p-price-msrp">MSRP : <strong>$35,698</strong></span> </div>
+            </a> </div>
+          <div class="portfolio-desc">
+            <h3><a href="#">2016 LEXUS IS 200T FSPORT</a></h3>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium debitis unde laboriosam perferendis obcaecati.</span> </div>
+          <div class="row no-gutters car-p-features font-primary clearfix">
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-cog3"></i><span> 30,000 mi</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-paint"></i><span> Metalic</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-fuel"></i><span> 11 kmpl</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-signal"></i><span> Automatic</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-wheel"></i><span> 18 Inch</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-care"></i><span> 2018</span></div>
+          </div>
+        </article>
+        
+        <!-- Car 6 -->
+        <article class="portfolio-item cf-hatchback">
+          <div class="portfolio-image"> <a href="#"> <img src="demos/car/images/filter-cars/6.jpg" alt="Open Imagination">
+            <div class="filter-p-pricing"> <span class="p-price t700 ls1">$32,568</span> <span class="p-price-msrp">MSRP : <strong>$35,698</strong></span> </div>
+            </a> </div>
+          <div class="portfolio-desc">
+            <h3><a href="#">Chevrolet T430 Hatchback</a></h3>
+            <span>Appropriately exploit strategic niche markets rather than optimal products. Enthusiastically negotiate perferendis the art methods of empowermen.</span> </div>
+          <div class="row no-gutters car-p-features font-primary clearfix">
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-meter"></i><span> 20000</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-door"></i><span> 5 Seater</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-fuel2"></i><span> 20kmpl</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-signal"></i><span> Automatic</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-wheel"></i><span> 15 Inch</span></div>
+            <div class="col-lg-4 col-6 nopadding"><i class="icon-car-care"></i><span> 2015</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+  <!-- Filter Car lists end --> 
+  
+  <!-- 二手車教學單元
+				============================================= -->
+  <div class="section nomargin ohidden">
+    <div class="heading-block nobottommargin center">
+      <h2>二手車教學單元</h2>
+    </div>
+  </div>
+	 
+  <div class="section ohidden video-gallery-row nopadding nomargin">	  
+	<div class="container">  
+	  <div class="row"> 
+		 <div class="col-md-6 col-12">
+			<div class="card"> 
+			<iframe class="card-img-top" height="315" src="https://www.youtube.com/embed/cjQbKlaHU7A?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+			<div class="card-body">
+             <h4 class="card-title">全新單元 • 中古車選購指南 (一)</h4>
+             <p class="card-text">二手車商挖寶 這些事情你要知道！</p>   
+            </div>	
+			 </div>	
+		  </div>
+		  <div class="col-md-6 col-12">
+			<div class="card"> 
+			<iframe class="card-img-top" height="315" src="https://www.youtube.com/embed/SFAVOHBNSUI?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+			<div class="card-body">
+             <h4 class="card-title">全新單元 • 中古車選購指南 (二)</h4>
+             <p class="card-text">必看！行家教你分辨泡水車、事故車</p>   
+            </div>	
+			 </div>	
+		  </div>		  
+	  </div>
+	  
+	  <div class="row"> 
+		 <div class="col-md-6 col-12">
+			<div class="card"> 
+			<iframe class="card-img-top" height="315" src="https://www.youtube.com/embed/zOFkfuEo-gw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+			<div class="card-body">
+             <h4 class="card-title">全新單元 • 中古車選購指南 (三)</h4>
+             <p class="card-text">事故車？逃不出第三方認證的法眼</p>   
+            </div>	
+			 </div>	
+		  </div>
+		  <div class="col-md-6 col-12">
+			<div class="card"> 
+			<iframe class="card-img-top" height="315" src="https://www.youtube.com/embed/zTcFezvrqqc?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+			<div class="card-body">
+             <h4 class="card-title">全新單元 • 中古車選購指南 (四)</h4>
+             <p class="card-text">中古車估車關鍵暨付款流程大揭密 </p>   
+            </div>	
+			 </div>	
+		  </div>		  
+	  </div>	
+	</div>	
+  </div>	  
+	  
+  
+  <!-- Video Gallery end --> 
+  
+  
+  
+  <!-- Featured Section
+				============================================= -->
+  <div class="section clearfix" style="background: #FFF url('demos/car/images/features/section1-bg.jpg') left bottom no-repeat; background-size: cover; padding: 140px 0">
+    <div class="container clearfix">
+      <div class="row clearfix">
+        <div class="col-lg-6 col-md-9">
+          <div class="heading-block">
+            <h3 style="font-size: 58px; line-height: 56px; letter-spacing: -2px" data-animate="bounceInUp">Our Fleet<br>
+              Your Fleet</h3>
+          </div>
+          <p data-animate="fadeInUp">Assertively iterate enterprise-wide portals through synergistic products. Efficiently build adaptive schemas after transparent quality vectors. Phosfluorescently optimize competitive resources after extensive convergence. Rapidiously optimize high-quality meta-services via distributed architectures. Credibly deliver 24/365.</p>
+          <div class="row topmargin clearfix">
+            <div class="col-md-6">
+              <div class="feature-box fbox-plain media-box">
+                <div class="fbox-icon" style="position: relative;"> <a href="#"><i class="icon-car-service2"></i></a> </div>
+                <div class="fbox-desc" style="margin-top: 25px">
+                  <h3>Skilled Professionals.</h3>
+                  <p class="t300" style="color: #666;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum est perspiciatis mollitia.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-box fbox-plain media-box">
+                <div class="fbox-icon" style="position: relative;"> <a href="#"><i class="icon-car-crane"></i></a> </div>
+                <div class="fbox-desc" style="margin-top: 25px">
+                  <h3>Skilled Professionals.</h3>
+                  <p class="t300" style="color: #666;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum est perspiciatis mollitia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Featured end --> 
+  
+  <!-- Buy And Sell Section
+				============================================= -->
+  <div class="section nomargin nopadding clearfix">
+    <div class="row common-height clearfix"> 
+      <!-- Half Section 1 -->
+      <div class="col-lg-6 dark bgcolor" style="background: url('demos/car/images/5.jpg') center center no-repeat; background-size: cover;">
+        <div class="col-padding clearfix"> <i class="i-plain i-xlarge icon-car-service inline-block" style="margin-bottom: 20px;"></i>
+          <div class="heading-block noborder" style="margin-bottom: 20px;">
+            <h3>Are You Looking for a New Car?</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aspernatur, doloribus. Aspernatur, maiores earum eaque quas temporibus eius dolore dicta.</p>
+          <a href="#" class="button button-rounded button-white button-light nomargin">Know More</a> </div>
+      </div>
+      <!-- Half Section 2 -->
+      <div class="col-lg-6 clearfix bgcolor" style="background: url('demos/car/images/6.jpg') center center no-repeat; background-size: cover;">
+        <div class="col-padding clearfix"> <i class="i-plain i-xlarge icon-car-care inline-block" style="margin-bottom: 20px;"></i>
+          <div class="heading-block noborder" style="margin-bottom: 20px;">
+            <h3>Want to sell a used car?</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aspernatur, doloribus. Aspernatur, maiores earum eaque quas temporibus eius dolore dicta.</p>
+          <a href="#" class="button button-large button-dark button-black button-rounded nomargin">Know More</a> </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Before Footer Section
+				============================================= -->
+  <div class="section nomargin clearfix" style="background: #FFF url('demos/car/images/footer-bg.jpg') center bottom no-repeat; background-size: cover; height: 770px">
+    <div class="divcenter dark center clearfix" style="max-width: 570px">
+      <div class="heading-block dark bottommargin-sm noborder">
+        <h2 class="nott t500">Raise Your Heart</h2>
+        <p style="color: #DDD; margin-top: 10px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ipsa necessitatibus rem facere perspiciatis neque laborum est, illum commodi sunt, nobis voluptas.</p>
+      </div>
+      <a href="#" class="uppercase t700 ls2" style="color: #FFF; font-size: 12px; border-bottom: 1px solid #FFF">Request a Quote</a> &rarr; </div>
+  </div>
+  
+	</div>
+</section>
+<!-- #content end --> 
+
+<!-- Footer
+		============================================= -->
+<footer id="footer" class="dark noborder" style="background-color: #080808;">
+  <div class="container-fluid clearfix"> 
+    
+    <!-- Footer Widgets
+				============================================= -->
+    <div class="footer-widgets-wrap clearfix" style="padding: 30px;">
+      <div class="row clearfix">
+        <div class="col-lg-6">
+          <div class="col_one_fourth">
+            <div class="widget widget_links clearfix">
+              <h4>Hire</h4>
+              <ul>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Plugins</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col_one_fourth">
+            <div class="widget widget_links clearfix">
+              <h4>Community</h4>
+              <ul>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Plugins</a></li>
+                <li><a href="#">Support Forums</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col_one_fourth">
+            <div class="widget widget_links clearfix">
+              <h4>Learn</h4>
+              <ul>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Plugins</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col_one_fourth col_last">
+            <div class="widget widget_links clearfix">
+              <h4>About</h4>
+              <ul>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Plugins</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 fright tright col_last"> <img src="demos/car/images/logo-footer.png" alt="" height="50" style="margin-top: "> <br>
+          <div style="color: #444"> <span>&copy; Certified Pre-Owned Cars. All Rights Reserved.</span>
+            <div class="clear"></div>
+            <p style="margin-top: 10px;">Objectively restore standards compliant opportunities whereas one-to-one collaboration and idea-sharing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- .footer-widgets-wrap end --> 
+    
+  </div>
+</footer>
+<!-- #footer end -->
+
+</div>
+<!-- #wrapper end --> 
+
+<!-- Go To Top
+	============================================= -->
+<div id="gotoTop" class="icon-angle-up"></div>
+
+<!-- Contact Button
+	============================================= -->
+<div id="contact-me" class="icon-line-head side-panel-trigger main-bg-color"></div>
+
+<!-- External JavaScripts
+	============================================= --> 
+<script src="js/jquery.js"></script> 
+<script src="js/plugins.js"></script> 
+
+
+<!-- Bootstrap Select Plugin --> 
+<script src="js/components/bs-select.js"></script> 
+
+
+
+<!-- Footer Scripts
+	============================================= --> 
+<script src="js/functions.js"></script> 
+<script>
+
+		//Car Appear In View
+		function isScrolledIntoView(elem) {
+			var docViewTop = $(window).scrollTop();
+			var docViewBottom = docViewTop + $(window).height();
+
+			var elemTop = $(elem).offset().top + 180;
+			var elemBottom = elemTop + $(elem).height() - 500;
+
+			return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+		}
+
+		$(window).scroll(function () {
+		   $('.running-car').each(function () {
+				if (isScrolledIntoView(this) === true) {
+					$(this).addClass('in-view');
+				} else {
+//					$(this).removeClass('in-view');
+				}
+			});
+		});
+
+		
+
+		
+	</script>
+</body>
+</html>
